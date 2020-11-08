@@ -82,6 +82,14 @@
           break;
         }
     }
+    function(currentkey)
+    {
+      var button=document.querySelector(".drum");
+      button.classList.add("pressed");
+      setTimeOut(function(){
+       button.classList.remove("pressed");
+      },100);
+    }
   </script>
 
   <script src="index.js"></script>
